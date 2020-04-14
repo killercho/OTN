@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".openDBPageActivity"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+    <android.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Spinner
+                android:id="@+id/menuSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:spinnerMode="dropdown"
+                android:entries="@array/DBCategories"
+                android:contextClickable="true"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.931"
+                app:layout_constraintStart_toEndOf="@+id/returnHome"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageButton
+                android:id="@+id/returnHome"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_rounded_button"
+                android:contentDescription="@string/return_home"
+                android:onClick="returnHome"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="?attr/homeAsUpIndicator" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </android.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="40dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/squirrelImg"
+                    android:layout_width="182dp"
+                    android:layout_height="162dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@mipmap/squirrel_image" />
+
+                <TextView
+                    android:id="@+id/squirrelText"
+                    android:layout_width="150dp"
+                    android:layout_height="156dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/squirrelText" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/myToolbar" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/spiderImg"
+                    android:layout_width="182dp"
+                    android:layout_height="162dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@mipmap/spider_img" />
+
+                <TextView
+                    android:id="@+id/spiderText"
+                    android:layout_width="150dp"
+                    android:layout_height="156dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/spiderText" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/myToolbar" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/dogImg"
+                    android:layout_width="182dp"
+                    android:layout_height="162dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@mipmap/dog_foreground" />
+
+                <TextView
+                    android:id="@+id/dogText"
+                    android:layout_width="150dp"
+                    android:layout_height="156dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/dogText" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/myToolbar" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/catImg"
+                    android:layout_width="182dp"
+                    android:layout_height="162dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@mipmap/cat_foreground" />
+
+                <TextView
+                    android:id="@+id/catText"
+                    android:layout_width="150dp"
+                    android:layout_height="156dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/catText" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/myToolbar" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/butterflyImg"
+                    android:layout_width="182dp"
+                    android:layout_height="162dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@mipmap/butterfly_foreground" />
+
+                <TextView
+                    android:id="@+id/butterflyText"
+                    android:layout_width="150dp"
+                    android:layout_height="156dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/butterflyText" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="175dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/myToolbar" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

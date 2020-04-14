@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="51dp"
+        android:layout_height="29dp"
+        android:layout_alignRight="@+id/colorSwitch"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="15dp"
+        android:alpha="100"
+        android:text="Dark"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold|normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Switch
+        android:id="@+id/colorSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:textStyle="normal"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/langSwitch" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="51dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="5dp"
+        android:alpha="100"
+        android:text="Light"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold|normal"
+        app:layout_constraintEnd_toStartOf="@+id/colorSwitch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="0dp"
+        android:alpha="100"
+        android:text="EN"
+        android:textSize="20dp"
+        android:textStyle="bold|normal"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@+id/langSwitch"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_alignRight="@+id/langSwitch"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="25dp"
+        android:alpha="100"
+        android:text="BG"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold|normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/langSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="64dp"
+        android:text="Choose your language"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constrainedWidth="true"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="180dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="64dp"
+        android:text="Choose your mode"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constrainedWidth="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

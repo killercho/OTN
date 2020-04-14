@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "522801149589",
+    "firebase_url": "https://otn-tf-boilerplate.firebaseio.com",
+    "project_id": "otn-tf-boilerplate",
+    "storage_bucket": "otn-tf-boilerplate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522801149589:android:238e95d14aba7f5bb70d9c",
+        "android_client_info": {
+          "package_name": "org.tensorflow.lite.examples.classification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522801149589-er1u17d9f2fus90gug7stb5a1c02iu8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tensorflow.lite.examples.classification",
+            "certificate_hash": "e7961eef91bf685ece9ee01a6ee761ba0e3edb90"
+          }
+        },
+        {
+          "client_id": "522801149589-k2begac461nuav65j9g5s0fpsiqds5ul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTbHCpD-Akeq9Ql-eDL0qsr9rqCjS6R4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522801149589-k2begac461nuav65j9g5s0fpsiqds5ul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

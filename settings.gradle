@@ -1,2 +1,1 @@
 include ':app'
-rootProject.name='OTN(V-1.0)'
