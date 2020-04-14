@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="tfe_color_primary">#0a0</color>
+    <color name="tfe_color_primary_dark">#008B00</color>
+    <color name="tfe_color_accent">#FF4081</color>
+
+    <color name="tfe_semi_transparent">#66000000</color>
+
+    <color name="colorPrimary">#0a0</color>
+    <color name="colorPrimaryDark">#008B00</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="daynight_textColor">#ff8222</color>
-    <color name="switchColor">#BC2F1D</color>
-    <color name="orange">#ff8200</color>
-    <color name="orangeDark">#f77000</color>
+    <color name="daynight_textColor">#6CBABB</color>
+    <color name="switchColor">#911DEE</color>
+    <color name="colorAppNameWhite">#FFFFFF</color>
+
+    <color name="black">#000</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
 
 
 </resources>

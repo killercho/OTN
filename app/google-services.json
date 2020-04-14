@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "522801149589-c0n4eti7h4i0punbjre47825gee4uuj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tensorflow.lite.examples.classification",
+            "certificate_hash": "d484633d4e67b4a1206fb1b241d8fa3f7f473c99"
+          }
+        },
+        {
           "client_id": "522801149589-er1u17d9f2fus90gug7stb5a1c02iu8s.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

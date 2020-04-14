@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorAppNameWhite"
+    >
 
     <ImageButton
         android:id="@+id/cameraBtn"
@@ -68,5 +70,7 @@
         android:onClick="SignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/common_google_signin_btn_icon_light" />
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light"
+        android:background="@color/colorAppNameWhite"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>
